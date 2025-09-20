@@ -181,7 +181,7 @@ span {
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: none;
     transition: 0.2s linear;
-    transform: translateY(-200px);
+    transform: translateY(00px);
 }
 
 .home-img img:hover {
@@ -227,7 +227,11 @@ span {
 
 .btn-container {
     text-align: center;
-    margin-top: 2rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .ranks-section {
@@ -414,7 +418,7 @@ span {
     color: #b74b4b;
 }
 
-.skills-content,
+.credentials-content,
 .education-content,
 .experience-content {
     display: flex;
@@ -425,7 +429,7 @@ span {
     margin: 0 auto;
 }
 
-.skill-item,
+.credential-item,
 .education-item,
 .experience-item {
     background: rgba(183, 75, 75, 0.1);
@@ -437,7 +441,7 @@ span {
     text-align: center;
 }
 
-.skill-item h3,
+.credential-item h3,
 .education-item h3,
 .experience-item h3 {
     color: #2d81d0;
@@ -535,18 +539,21 @@ html {
     .section h2 {
         font-size: 2.5rem;
         margin-bottom: 2rem;
+        padding-left: 1rem;
     }
-    .skills-content,
+    .credentials-content,
     .education-content,
     .experience-content {
         flex-direction: column;
         gap: 2rem;
     }
-    .skill-item,
+    .credential-item,
     .education-item,
     .experience-item {
         min-width: auto;
         padding: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .contact-links {
         flex-direction: column;
@@ -612,6 +619,7 @@ html {
         font-size: 1.8rem;
         /* smaller subheading */
         text-align: center;
+        padding-left: 1rem;
     }
     .home-content h1 {
         font-size: 2.2rem;
@@ -623,6 +631,19 @@ html {
         /* hide any overflow */
         max-width: 100%;
         /* ensure it fits container */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .home-content p {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .home-content h4 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: left;
     }
     .home-img img {
         width: 100%;
@@ -631,6 +652,30 @@ html {
         /* prevent oversized image */
         margin-top: 1.5rem;
         transform: translateY(10px);
+    }
+    .typing-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+    .social-icons {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+    }
+    .btn-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        width: 100%;
+    }
+    .ranks-section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1.5rem;
     }
     /* Contact section for very small screens */
     .contact-content {
