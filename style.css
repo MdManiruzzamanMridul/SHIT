@@ -365,15 +365,15 @@ span {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     .home {
         gap: 4rem;
     }
 }
 
-@media(max-width:995px) {
+@media(max-width:495px) {
     .home {
-        flex-direction: row;
+        flex-direction: column;
         margin: 20rem 15rem;
     }
     .home .home-content h3 {
@@ -384,7 +384,7 @@ span {
     }
     .home-img img {
         width: 20vw;
-        margin-top: 4rem;
+        margin-top: 20rem;
         transform: translateY(50px);
     }
 }
