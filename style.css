@@ -365,26 +365,37 @@ span {
     }
 }
 
+
+/* Mobile-friendly styles */
+
 @media (max-width: 500px) {
     .home {
-        gap: 4rem;
-    }
-}
-
-@media(max-width:495px) {
-    .home {
+        display: flex;
         flex-direction: column;
-        margin: 20rem 15rem;
+        /* stack content vertically */
+        align-items: center;
+        /* center items */
+        gap: 2rem;
+        /* spacing between elements */
+        margin: 1.5rem 1rem;
+        /* smaller margins for small screens */
     }
     .home .home-content h3 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        /* smaller subheading */
+        text-align: center;
     }
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 2.8rem;
+        /* smaller main heading */
+        text-align: center;
     }
     .home-img img {
-        width: 20vw;
-        margin-top: 20rem;
-        transform: translateY(50px);
+        width: 80%;
+        /* responsive width */
+        max-width: 250px;
+        /* prevent oversized image */
+        margin-top: 1.5rem;
+        transform: translateY(10px);
     }
 }
