@@ -555,6 +555,39 @@ html {
     .contact-links a {
         width: 200px;
     }
+    /* Contact section mobile fixes */
+    .contact-content {
+        max-width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .contact-intro-box {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 0.8rem;
+    }
+    .contact-intro-box p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .contact-info {
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .contact-info p {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+    .contact-info a {
+        display: block;
+        margin: 0.3rem 0;
+        margin-right: 0;
+        font-size: 1.2rem;
+        word-break: break-all;
+    }
 }
 
 
@@ -595,5 +628,24 @@ html {
         /* prevent oversized image */
         margin-top: 1.5rem;
         transform: translateY(10px);
+    }
+    /* Contact section for very small screens */
+    .contact-content {
+        padding: 0 0.5rem;
+    }
+    .contact-intro-box {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .contact-intro-box p {
+        font-size: 1.2rem;
+    }
+    .contact-info p {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+    .contact-info a {
+        font-size: 1.1rem;
+        margin: 0.2rem 0;
     }
 }
