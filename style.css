@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    margin-top: 20px;
+    margin-top: 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,9 +38,9 @@ header {
 }
 
 header.scrolled {
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 2px 20px rgba(55, 49, 49, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 20px rgba(71, 70, 70, 0.3);
+    backdrop-filter: blur(50px);
 }
 
 .logo {
@@ -147,8 +147,9 @@ span {
     width: 20vw;
     border-radius: 20%;
     box-shadow: 0 0 25px solid #b74b4b;
-    cursor: pointer;
+    cursor: none;
     transition: 0.2s linear;
+    transform: translateY(-200px);
 }
 
 .home-img img:hover {
@@ -195,6 +196,55 @@ span {
 .btn-container {
     text-align: center;
     margin-top: 2rem;
+}
+
+.ranks-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(183, 75, 75, 0.1);
+    border-radius: 1rem;
+    border: 2px solid rgba(183, 75, 75, 0.3);
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ranks-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.rank-highlight {
+    color: #00ff00 !important;
+    text-shadow: 0 0 2px #1b511b;
+}
+
+.ranks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranks-list li {
+    font-size: 1.4rem;
+    padding: 0.8rem 0;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(183, 75, 75, 0.2);
+    text-align: center;
+}
+
+.ranks-list li:hover {
+    color: #b74b4b;
+    transform: scale(1.05);
+    text-shadow: 0 0 5px #b74b4b;
+}
+
+.ranks-list li:last-child {
+    border-bottom: none;
 }
 
 .btn:hover {
