@@ -391,7 +391,7 @@ span {
         text-align: center;
     }
     .home-img img {
-        width: 100%;
+        width: 150%;
         /* responsive width */
         max-width: 500px;
         /* prevent oversized image */
