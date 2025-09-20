@@ -398,6 +398,166 @@ span {
 }
 
 
+/* Additional sections styling */
+
+.section {
+    min-height: 100vh;
+    padding: 8rem 9% 5rem;
+    background-color: black;
+    color: white;
+}
+
+.section h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #b74b4b;
+}
+
+.skills-content,
+.education-content,
+.experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-item,
+.education-item,
+.experience-item {
+    background: rgba(183, 75, 75, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(183, 75, 75, 0.3);
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.skill-item h3,
+.education-item h3,
+.experience-item h3 {
+    color: #2d81d0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-intro-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-intro-box p {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.contact-info a {
+    color: #00ff00;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #b74b4b;
+    text-decoration: underline;
+}
+
+.contact-content p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    background: rgba(183, 75, 75, 0.2);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 2px solid #b74b4b;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #b74b4b;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile responsive for new sections */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 6rem 2rem 3rem;
+    }
+    .section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .skills-content,
+    .education-content,
+    .experience-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .skill-item,
+    .education-item,
+    .experience-item {
+        min-width: auto;
+        padding: 1.5rem;
+    }
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-links a {
+        width: 200px;
+    }
+}
+
+
 /* Mobile-friendly styles */
 
 @media (max-width: 500px) {
@@ -418,9 +578,15 @@ span {
         text-align: center;
     }
     .home-content h1 {
-        font-size: 2.5rem;
-        /* smaller main heading */
+        font-size: 2.2rem;
+        /* smaller main heading to fit one line */
         text-align: center;
+        white-space: nowrap;
+        /* prevent text wrapping to next line */
+        overflow: hidden;
+        /* hide any overflow */
+        max-width: 100%;
+        /* ensure it fits container */
     }
     .home-img img {
         width: 100%;
