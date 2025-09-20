@@ -78,6 +78,12 @@ nav a.active {
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #b74b4b;
+    transform: scale(1.1);
 }
 
 @media(max-width:995px) {
@@ -158,6 +164,13 @@ span {
 
 .tuition-text {
     color: #0080ff !important;
+    transition: all 0.3s ease;
+}
+
+.tuition-text:hover {
+    color: #4da6ff !important;
+    text-shadow: 0 0 5px #0080ff;
+    transform: scale(1.05);
 }
 
 .home-content h3 {
@@ -439,6 +452,17 @@ span {
     flex: 1;
     min-width: 280px;
     text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.credential-item:hover,
+.education-item:hover,
+.experience-item:hover {
+    background: rgba(183, 75, 75, 0.2);
+    border-color: #b74b4b;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(183, 75, 75, 0.4);
 }
 
 .credential-item h3,
