@@ -373,7 +373,7 @@ span {
 
 @media(max-width:995px) {
     .home {
-        flex-direction: column;
+        flex-direction: row;
         margin: 5rem 4rem;
     }
     .home .home-content h3 {
