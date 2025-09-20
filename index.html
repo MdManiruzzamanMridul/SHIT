@@ -13,6 +13,10 @@
     <header>
         <a href="#" class="logo">GHOSTDOG45</a>
 
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <nav>
             <a href="#" class="active"> Home</a>
             <a href="#">Skills</a>
@@ -95,6 +99,46 @@
                 header.classList.remove('scrolled');
             }
         });
+
+        // Mobile menu toggle functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+
+                // Change hamburger to X icon
+                const icon = this.querySelector('i');
+                if (nav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when clicking on a navigation link
+            nav.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    nav.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+                    nav.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
     </script>
 </body>
 

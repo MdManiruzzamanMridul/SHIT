@@ -70,33 +70,65 @@ nav a.active {
     border-bottom: 3px solid #b74b4b;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
 @media(max-width:995px) {
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
     nav {
-        position: absolute;
-        display: none;
+        position: fixed;
         top: 0;
-        right: 0;
-        width: 40%;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(22, 22, 22, 0.95);
+        backdrop-filter: blur(10px);
         border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        padding: 6rem 2rem 2rem;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
     }
     nav.active {
-        display: block;
+        right: 0;
     }
     nav a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 1rem 0;
+        padding: 1rem 2rem;
+        color: white;
+        text-align: center;
+        border-bottom: 2px solid rgba(183, 75, 75, 0.3);
+        border-radius: 0.5rem;
+        width: 80%;
+        transition: all 0.3s ease;
     }
     nav a:hover,
     nav a.active {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        background-color: rgba(183, 75, 75, 0.2);
+        color: #b74b4b;
+        border-bottom: 2px solid #b74b4b;
+        transform: translateX(5px);
     }
 }
 
@@ -391,7 +423,7 @@ span {
         text-align: center;
     }
     .home-img img {
-        width: 150%;
+        width: 100%;
         /* responsive width */
         max-width: 500px;
         /* prevent oversized image */
