@@ -418,14 +418,14 @@ span {
         text-align: center;
     }
     .home-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         /* smaller main heading */
         text-align: center;
     }
     .home-img img {
         width: 100%;
         /* responsive width */
-        max-width: 500px;
+        max-width: 300px;
         /* prevent oversized image */
         margin-top: 1.5rem;
         transform: translateY(10px);
