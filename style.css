@@ -393,7 +393,7 @@ span {
     .home-img img {
         width: 100%;
         /* responsive width */
-        max-width: 250px;
+        max-width: 500px;
         /* prevent oversized image */
         margin-top: 1.5rem;
         transform: translateY(10px);
