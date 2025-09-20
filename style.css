@@ -622,15 +622,9 @@ html {
         padding-left: 1rem;
     }
     .home-content h1 {
-        font-size: 2.2rem;
-        /* smaller main heading to fit one line */
+        font-size: 2.5rem;
+        /* smaller main heading */
         text-align: center;
-        white-space: nowrap;
-        /* prevent text wrapping to next line */
-        overflow: hidden;
-        /* hide any overflow */
-        max-width: 100%;
-        /* ensure it fits container */
         padding-left: 1rem;
         padding-right: 1rem;
     }
